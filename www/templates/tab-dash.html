@@ -1,0 +1,29 @@
+<ion-view view-title="Ultima Dragon">
+  <ion-content class="padding">
+	<button class="button" ng-click="modalPlayer.show()">
+		<i class="icon ion-person"></i>
+	</button>
+	<button class="button" ng-click="modalInventory.show()">
+		<i class="icon ion-bag"></i>
+	</button>
+	<button class="button" ng-click="modalSkill.show()">
+		<i class="icon ion-information-circled"></i>
+	</button>
+	<button class="button" ng-click="getPosition()">
+		<i class="icon ion-search"></i>
+	</button>
+	<button class="button" ng-click="createWeapon()">
+		<i class="icon ion-wand"></i>
+	</button>
+	<button class="button" ng-click="saveWorld()">
+		<i class="icon ion-archive"></i>
+	</button>
+	<button class="button" ng-click="cleanWorld()">
+		<i class="icon ion-close"></i>
+	</button>
+	<button class="button" ng-click="modalWorld.show()">
+		<i class="icon ion-earth"></i>
+	</button>
+	<div>{{geoResult}}</div>
+  </ion-content>
+</ion-view>

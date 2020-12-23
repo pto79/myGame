@@ -1,0 +1,38 @@
+  <ion-modal-view>
+    <ion-header-bar>
+		<h1 class="title">
+			<div class="row">
+				<div class="col">Lv 1</div>
+				<div class="col">Ba Yang</div>
+				<div class="col">Fighter</div>
+			</div>
+		</h1>
+    </ion-header-bar>
+    <ion-content>
+	
+    <ion-list>
+
+      <ion-item >
+
+        <div ng-if="myPlayer.skills.swordmanship > 0">
+          <div class="row" style="text-align: center;">
+            <div class="col">
+			Swordmanship {{myPlayer.skills.swordmanship}}	
+            </div>
+          </div>
+        </div>
+      </ion-item>
+	  
+	<ion-item ng-repeat="(key, value) in myPlayer.skills">
+         <div>
+          <div class="row" style="text-align: center;">
+            <div class="col">
+			 {{key}}	 {{value}}
+            </div>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+
+    </ion-content>
+  </ion-modal-view>
